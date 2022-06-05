@@ -1,0 +1,7 @@
+.wrapper {
+    height: 100vh;
+    background-image: url('../../assets/images/halo_hero.jpg');
+    background-repeat: no-repeat;
+    background-position: 21%;
+    background-size: cover;
+}
