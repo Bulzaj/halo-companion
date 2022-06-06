@@ -1,9 +1,12 @@
 import { AppBar, Toolbar } from "@mui/material";
+import Logotype from "../logotype/Logotype";
 
 const Navbar = function () {
   return (
     <AppBar position="fixed">
-      <Toolbar></Toolbar>
+      <Toolbar>
+        <Logotype />
+      </Toolbar>
     </AppBar>
   );
 };
