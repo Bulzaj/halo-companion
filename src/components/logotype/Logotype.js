@@ -1,7 +1,9 @@
 import { Typography, Box } from "@mui/material";
 import logo from "../../assets/images/halo_logo.png";
 
-const Logotype = function () {
+const Logotype = function (props) {
+  const { light } = props;
+
   return (
     <Box sx={{ display: "flex", alignItems: "center", p: 1 }}>
       <Box
@@ -10,7 +12,9 @@ const Logotype = function () {
         sx={{ height: "50px" }}
         alt="halo_logotype_img"
       />
-      <Typography variant="h6">Halo Companion</Typography>
+      <Typography variant="h6" color={light && "white"}>
+        Halo Companion
+      </Typography>
     </Box>
   );
 };

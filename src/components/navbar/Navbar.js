@@ -3,9 +3,9 @@ import Logotype from "../logotype/Logotype";
 
 const Navbar = function () {
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" color="transparent" elevation={false}>
       <Toolbar>
-        <Logotype />
+        <Logotype light />
       </Toolbar>
     </AppBar>
   );
