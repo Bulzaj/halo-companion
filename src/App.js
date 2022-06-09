@@ -11,18 +11,21 @@ import LandingPage from "./pages/landing-page/LandingPage";
 let theme = createTheme({});
 theme = responsiveFontSizes(theme);
 
+// TODO: validate player finder input
+// TODO: validate navbar player finder input
+// TODO: scroll to player finder section after button click
+// TODO: navigate to dashboard page after form submit & navbar finder & pasing player's tag in url
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div>
-        <CssBaseline />
-        <Navbar />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
+      <CssBaseline />
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
