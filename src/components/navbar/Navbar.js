@@ -1,9 +1,15 @@
-import { AppBar, Toolbar, useScrollTrigger } from "@mui/material";
+import {
+  Container,
+  Box,
+  AppBar,
+  Toolbar,
+  useScrollTrigger,
+} from "@mui/material";
 import Logotype from "../logotype/Logotype";
-import { blueGrey } from "@mui/material/colors";
+import Search from "../search/Search";
 
 const Navbar = function () {
-  const trigger = useScrollTrigger();
+  const trigger = useScrollTrigger({ disableHysteresis: true });
 
   return (
     <AppBar
@@ -11,9 +17,16 @@ const Navbar = function () {
       color={trigger ? "primary" : "transparent"}
       elevation={trigger ? 4 : 0}
     >
-      <Toolbar>
-        <Logotype light />
-      </Toolbar>
+      <Container maxWidth="lg">
+        <Toolbar>
+          <Box flexGrow={1}>
+            <Logotype light />
+          </Box>
+          <Box>
+            <Search />
+          </Box>
+        </Toolbar>
+      </Container>
     </AppBar>
   );
 };
