@@ -17,6 +17,7 @@ const HeroSection = function () {
         <Typography
           variant="h1"
           gutterBottom
+          align="center"
           sx={{
             fontWeight: "600",
             background:
