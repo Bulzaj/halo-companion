@@ -19,7 +19,8 @@ const HeroSection = function () {
           gutterBottom
           sx={{
             fontWeight: "600",
-            background: "-webkit-linear-gradient(bottom,  #ccc, #222)",
+            background:
+              "-webkit-linear-gradient(bottom,  rgba(255, 255, 255, .8), rgba(0, 0, 0, .8))",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}
