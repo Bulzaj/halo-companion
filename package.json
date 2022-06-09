@@ -1,6 +1,6 @@
 {
   "name": "halo-companion",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": true,
   "dependencies": {
     "@mui/material": "^5.8.2",
