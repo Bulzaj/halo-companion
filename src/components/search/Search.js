@@ -11,7 +11,9 @@ const Search = function () {
         p: "2px 4px",
         display: "flex",
         alignItems: "center",
-        width: 201,
+        width: 190,
+        transition: (theme) => theme.transitions.create("width"),
+        "&:hover": { width: 211 },
       }}
     >
       <InputBase
