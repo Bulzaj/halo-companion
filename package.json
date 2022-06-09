@@ -1,8 +1,9 @@
 {
   "name": "halo-companion",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": true,
   "dependencies": {
+    "@mui/icons-material": "^5.8.3",
     "@mui/material": "^5.8.2",
     "@mui/styled-engine-sc": "^5.8.0",
     "@testing-library/jest-dom": "^5.16.4",
