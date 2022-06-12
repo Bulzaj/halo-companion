@@ -2,12 +2,9 @@ import { Box, Button, Typography } from "@mui/material";
 import classes from "./heroSection.module.css";
 
 const HeroSection = function () {
-  const buttonClickHandler = function () {
-    console.log("clicked");
-  };
-
   return (
     <Box
+      id="hero-section"
       className={classes.wrapper}
       display="flex"
       justifyContent="center"
@@ -29,11 +26,12 @@ const HeroSection = function () {
           HALO COMPANION
         </Typography>
         <Button
+          component="a"
+          href="#find-user-section"
           type="submit"
           variant="contained"
           size="large"
           sx={{ margin: "auto" }}
-          onClick={buttonClickHandler}
         >
           Game stats
         </Button>
