@@ -7,6 +7,7 @@ import {
 } from "@mui/material/styles";
 import Navbar from "./components/navbar/Navbar";
 import LandingPage from "./pages/landing-page/LandingPage";
+import DashboardPage from "./pages/dashboard-page/DashboardPage";
 
 let theme = createTheme({});
 theme = responsiveFontSizes(theme);
@@ -21,6 +22,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/dashboard/:gametag" element={<DashboardPage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

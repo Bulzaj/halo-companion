@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Box, Container, Button, TextField, Typography } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import { useNavigate } from "react-router-dom";
 
 const HELPER_TEXT = "Field could not be empty";
 
@@ -8,9 +9,11 @@ const FindUserSection = function () {
   const [inputValue, setInputValue] = useState("");
   const [focusOut, setFocusOut] = useState(false);
 
+  const navigate = useNavigate();
+
   const handleSubmit = function (e) {
     e.preventDefault();
-    console.log("submited");
+    navigate(`/dashboard/${inputValue}`);
   };
 
   const handleInputChange = function (e) {
@@ -51,6 +54,7 @@ const FindUserSection = function () {
             helperText={!inputValue && focusOut && HELPER_TEXT}
           />
           <Button
+            type="submit"
             variant="contained"
             fullWidth
             endIcon={<SearchIcon />}
